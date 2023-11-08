@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Redactor App</title>
+</head>
+
+<body>
+    <h1>Vera's Redactor App</h1>
+    <form id="redactForm">
+        <label for="originalText">Original Text:</label>
+        <input type="text" id="originalText" name="originalText" required>
+
+        <label for="wordsToRedact">Words to Redact (space-separated):</label>
+        <input type="text" id="wordsToRedact" name="wordsToRedact" required>
+
+
+        <label for="replacementText">Replacement Text:</label>
+        <input type="text" id="replacementText" name="replacementText" required>
+
+
+        <button type="button" onclick="redact()">Redact Now</button>
+    </form>
+
+    <div id="redactedResult"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
